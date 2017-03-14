@@ -16,8 +16,8 @@
  **/
 .row {
   max-width: 1000px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   margin: 0 auto;
 }
 
@@ -34,6 +34,10 @@
 
 .col-3, .col-4, .col-6, .col-12 {
   float: left;
+  border: 1px grey solid; 
+  padding: 0px; 
+  margin-left: 3px;
+  margin-right: 3px;  
 
   /* Gutters:
    * Each column is padded by half-a-gutter on each side,
@@ -41,8 +45,7 @@
    * Half a gutter is 10px, 10/960 (context) = 1.041666%
    *
    */
-  padding-left: 1.04166666%;
-  padding-right: 1.04166666%;
+
 }
 
 /* Mobile defaults */
@@ -55,7 +58,11 @@
 @media only screen and (min-width: 640px) {
   /* 3 columns, 3/12 in % */
   .col-3 {
-    width: 25%;
+    width: 32%;
+  }
+
+  .swimg {
+    max-width: 100%; 
   }
 
   /* 4 columns */
